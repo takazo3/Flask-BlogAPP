@@ -1,0 +1,21 @@
+{% extends "bootstrap/base.html" %} {% block content %}
+<div class="container">
+	<h1 class="text-primary">ログイン</h1>
+	<form method="POST">
+		<div class="container mb-5">
+			<label for="" class="form-label">ユーザー名</label>
+			<input type="text" class="form-control" name="username" placeholder="user name" />
+		</div>
+		<div class="container mb-5">
+			<label for="body" class="form-label">パスワード</label>
+			<input type="password" class="form-control" name="password"placeholder="12文字以内" />
+		</div>
+		<div class="spacer-mt5">
+			
+		</div>
+		<div class="container mb-5">
+			<button type="submit" class="btn btn-info">ログイン</button>
+		</div>
+	</form>
+</div>
+{% endblock %}

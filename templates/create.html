@@ -1,0 +1,22 @@
+{% extends "bootstrap/base.html" %} {% block content %}
+
+<div class="container">
+<h1>新規登録</h1>
+<form method="POST">
+<div class="container mb-5">	
+	<label for="title">タイトル</label>
+	<input class="form-control" type="text" name="title" />
+</div>
+<div class="container  mb-5">
+	<label for="exampleFormControlTextarea1" class="form-label">記事</label>
+	<textarea class="form-control" id="exampleFormControlTextarea1"  rows="3"></textarea>
+</div>
+
+<div class="container mb-5">	
+	<button type="submit" class="btn btn-primary mb-3">投稿</button>
+</div>
+</div>	
+</form>
+</div>
+<link rel="stylesheet" href="/static/js/main.js">
+{% endblock %}
